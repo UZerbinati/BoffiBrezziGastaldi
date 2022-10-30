@@ -37,7 +37,7 @@ ST.setShift(12.0)
 KSP = ST.getKSP()
 KSP.setType("minres")
 PC = KSP.getPC();
-PC.setType("lu");
+PC.setType("svd");
 PC.setFactorSolverType("mumps");
 E.setST(ST);
 E.solve();
